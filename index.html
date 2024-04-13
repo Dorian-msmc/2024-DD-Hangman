@@ -1,1 +1,17 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dorian's Hangman |</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="scripts/word-list.js" defer></script>
+    <script src="scripts/script.js" defer></script>
+</head>
+<body> 
+#array of my word list
+var wordList = ["Porsche", "Infiniti", "Mercedes", "Acura", "Trackhawk", "Corvette"];
+#This will give me a random word from my wordList array, 
+var randomIndex = Math.floor(Math.random() * wordList.length);
+var randomWord = wordList[randomIndex];
 
