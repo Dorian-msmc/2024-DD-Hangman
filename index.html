@@ -3,32 +3,26 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title> Dorian's Hangman Game | </title>
-    <link rel="stylesheet" href="style.css">
-    <script src="scripts/word-list.js" defer></script>
-    <script src="scripts/script.js" defer></script>
+    <title>Dorian's Car Brand Hangman</title>
+    <link rel="stylesheet" href="./assets/css/style.css">
+    <!-- The above line links to an external stylesheet -->
 </head>
 <body>
-    <div class="game-modal"> 
-        <div class="content">
-            <img src="#" alt="gif">
-            <h4>Play Again!</h4>
-            <p>The correct word was: <b>Porsche</b></p>
-            <button class="play-again">Play Again</button>
-        </div>
+    <div class="row header">
+        <h1 class="headertext">Dorian's Car Brand Hangman</h1>
+        <!-- This is the header of the page -->
     </div>
-    <div class="container">
-        <div class="hangman-box">
-            <img src="#" draggable="false" alt="hangman-img">
-            <h1> Dorian's Hangman Game</h1>
-        </div>
-        <div class="game-box">
-            <ul class="word-display"></ul>
-            <h4 class="hint-text">Hint: <b></b></h4>
-            <h4 class="guesses-text">Incorrect: <b></b></h4>
-            <div class="keyboard"></div>
-        </div>
-    </div>
+   
+    <p>Guess the car brand:</p>
+    <!-- The above line displays the instruction to the user -->
+    <div id="wordDisplay"></div>
+    <!-- This is where the word to be guessed will be displayed -->
+    <svg height="250" width="200" id="hangmanDrawing">
+        <!-- This is where the hangman drawing will be displayed -->
+    </svg>
+    <div id="keyboard"></div>
+    <!-- This is where the keyboard will be displayed -->
+    <script src="./assets/js/script.js"></script>
+    <!-- The above line links to an external JavaScript file -->
 </body>
-</html
-
+</html>
