@@ -18,8 +18,6 @@ const hangmanParts = [
 ];
 
 function chooseWord() {
-    // Choose a random car brand from the array
-    selectedBrand = carBrands[Math.floor(Math.random() * carBrands.length)].toUpperCase();
     // Initialize the guessedLetters array with underscores
     guessedLetters = Array(selectedBrand.length).fill('_');
     // Display the word with underscores
